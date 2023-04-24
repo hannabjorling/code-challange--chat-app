@@ -16,6 +16,7 @@ body {
 main {
     display: flex;
     flex-wrap: wrap;
+    overflow-x: hidden;
 
     .container {
         width: 100%;
