@@ -209,31 +209,36 @@ main {
                     justify-content: center;
                     margin-top: 15px;
 
-                    input {
+                    .input-field {
                         margin: 10px 0 10px 10px;
                         height: 40px;
                         border-radius: 20px 0 0 20px;
                         border: none;
                         width: 100%;
-                        padding-inline: 1.5rem;
-                    }
+                        background-color: #FFF;
+                        align-items: center;
+                        display: inline-flex;
+                        position: relative;
 
-                    input::placeholder {
-                        font-size: 11px;
-                        font-family: 'Rubik', sans-serif;
-                        font-weight: 400;
-                        color: hsl(206, 6%, 79%);
-                    }
+                        p {
+                            position: absolute;
+                            left: 1rem;
+                            font-size: 11px;
+                            font-family: 'Rubik', sans-serif;
+                            font-weight: 400;
+                            color: hsl(206, 6%, 79%);
+                        }
 
-                    input:focus {
-                        outline: none;
+                        p.typewriter {
+                            font-size: 9px;
+                        }
                     }
 
                     button {
                         border: none;
                         margin: 10px 10px 10px 0;
                         background-color: #FFF;
-                        height: 42px;
+                        height: 40px;
                         border-radius: 0 20px 20px 0;
 
                         i {
@@ -274,3 +279,42 @@ main {
         }
     }
 }
+
+/* MEDIA QUERIES - DESKTOP */
+@media screen and (min-width: 1440px) {
+    main>.container {
+        width: 50%;
+        height: 100vh;
+
+        .graph-el-left {
+            left: -30%;
+            height: 90vh;
+            width: 90%;
+        }
+
+        .graph-el-right {
+            bottom: 0;
+            top: unset;
+            height: 90vh;
+            width: 90%;
+        }
+
+        .phone-container {
+            margin: unset;
+            position: absolute;
+            right: 80px;
+        }
+
+        .text-container {
+            text-align: unset;
+            padding: 0 16rem 0 1rem;
+
+
+            h1 {
+                align-self: unset;
+            }
+        }
+    }
+}
+
+@import "./animations.scss"

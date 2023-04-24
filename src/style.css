@@ -179,28 +179,33 @@ main .container .phone-container .chat-box .send-message {
   justify-content: center;
   margin-top: 15px;
 }
-main .container .phone-container .chat-box .send-message input {
+main .container .phone-container .chat-box .send-message .input-field {
   margin: 10px 0 10px 10px;
   height: 40px;
   border-radius: 20px 0 0 20px;
   border: none;
   width: 100%;
-  padding-inline: 1.5rem;
+  background-color: #FFF;
+  align-items: center;
+  display: inline-flex;
+  position: relative;
 }
-main .container .phone-container .chat-box .send-message input::placeholder {
+main .container .phone-container .chat-box .send-message .input-field p {
+  position: absolute;
+  left: 1rem;
   font-size: 11px;
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   color: hsl(206deg, 6%, 79%);
 }
-main .container .phone-container .chat-box .send-message input:focus {
-  outline: none;
+main .container .phone-container .chat-box .send-message .input-field p.typewriter {
+  font-size: 9px;
 }
 main .container .phone-container .chat-box .send-message button {
   border: none;
   margin: 10px 10px 10px 0;
   background-color: #FFF;
-  height: 42px;
+  height: 40px;
   border-radius: 0 20px 20px 0;
 }
 main .container .phone-container .chat-box .send-message button i {
@@ -231,6 +236,146 @@ main .container .text-container p {
   color: hsl(270deg, 7%, 64%);
   line-height: 30px;
   margin-top: 0;
+}
+
+/* MEDIA QUERIES - DESKTOP */
+@media screen and (min-width: 1440px) {
+  main > .container {
+    width: 50%;
+    height: 100vh;
+  }
+  main > .container .graph-el-left {
+    left: -30%;
+    height: 90vh;
+    width: 90%;
+  }
+  main > .container .graph-el-right {
+    bottom: 0;
+    top: unset;
+    height: 90vh;
+    width: 90%;
+  }
+  main > .container .phone-container {
+    margin: unset;
+    position: absolute;
+    right: 80px;
+  }
+  main > .container .text-container {
+    text-align: unset;
+    padding: 0 16rem 0 1rem;
+  }
+  main > .container .text-container h1 {
+    align-self: unset;
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+main > .container > .phone-container {
+  animation: slide-in-left 1s;
+}
+
+.message-incoming:nth-of-type(1) {
+  opacity: 0;
+  animation: slide-in-left 1s forwards;
+  animation-delay: 0.6s;
+}
+
+.message-incoming:nth-of-type(2) {
+  opacity: 0;
+  animation: slide-in-left 1s forwards;
+  animation-delay: 0.6s;
+}
+
+.message-outgoing:nth-of-type(3) {
+  opacity: 0;
+  animation: slide-in-left 1s forwards;
+  animation-delay: 0.6s;
+}
+
+.message-outgoing:nth-of-type(4) {
+  opacity: 0;
+  animation: fade-in 0.5s forwards;
+  animation-delay: 4.7s;
+}
+
+.message-outgoing:nth-of-type(5) {
+  opacity: 0;
+  animation: fade-in 0.5s forwards;
+  animation-delay: 6.7s;
+}
+
+.message-incoming:nth-of-type(6) {
+  opacity: 0;
+  animation: fade-in 0.5s forwards;
+  animation-delay: 7s;
+}
+
+.message-incoming-option:nth-of-type(7) {
+  opacity: 0;
+  animation: fade-in 0.5s forwards;
+  animation-delay: 8s;
+}
+
+.message-incoming-option:nth-of-type(8) {
+  opacity: 0;
+  animation: fade-in 0.5s forwards;
+  animation-delay: 8s;
+}
+
+.send-message {
+  opacity: 0;
+  animation: fade-in 0.5s forwards;
+  animation-delay: 0.6s;
+}
+.send-message .typewriter {
+  display: inline;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  max-width: 100%;
+  animation: typing 1.8s steps(40, end);
 }
 
 /*# sourceMappingURL=style.css.map */
