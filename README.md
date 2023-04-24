@@ -23,7 +23,6 @@ Users should be able to:
 ### Screenshot
 
 ![desktop](./public/screenshots/desktop.png)
-![desktop in animation](./public/screenshots/desktop-in-animation.png)
 ![mobile](./public/screenshots/mobile.png)
 
 ### Links
