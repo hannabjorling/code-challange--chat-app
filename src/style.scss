@@ -65,7 +65,7 @@ main {
                     padding: 0 10px 15px 10px;
 
                     i {
-                        margin-top: 25px;
+                        margin-top: 35px;
                         font-size: 12px;
                     }
 
@@ -277,6 +277,16 @@ main {
                 margin-top: 0;
             }
         }
+    }
+
+    .attribution {
+        font-size: 11px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .attribution a {
+        color: hsl(228, 45%, 44%);
     }
 }
 

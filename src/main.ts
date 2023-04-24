@@ -30,5 +30,5 @@ setTimeout(() => {
 
 setTimeout(() => {
     (document.querySelector('.fa-angle-right') as HTMLElement).style.backgroundColor = 'hsl(271deg, 36%, 24%)';
-    document.querySelector('#message')!.innerHTML = `Type a message...`
+    document.querySelector('#message')!.innerHTML = `Type a message`
 }, 6900);

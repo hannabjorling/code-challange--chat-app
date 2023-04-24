@@ -58,7 +58,7 @@ main .container .phone-container .heading-box .heading-content {
   padding: 0 10px 15px 10px;
 }
 main .container .phone-container .heading-box .heading-content i {
-  margin-top: 25px;
+  margin-top: 35px;
   font-size: 12px;
 }
 main .container .phone-container .heading-box .heading-content img {
@@ -237,6 +237,14 @@ main .container .text-container p {
   line-height: 30px;
   margin-top: 0;
 }
+main .attribution {
+  font-size: 11px;
+  width: 100%;
+  text-align: center;
+}
+main .attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
 
 /* MEDIA QUERIES - DESKTOP */
 @media screen and (min-width: 1440px) {
@@ -330,8 +338,8 @@ main > .container > .phone-container {
 
 .message-outgoing:nth-of-type(3) {
   opacity: 0;
-  animation: slide-in-left 1s forwards;
-  animation-delay: 0.6s;
+  animation: fade-in 0.5s forwards;
+  animation-delay: 4.7s;
 }
 
 .message-outgoing:nth-of-type(4) {
