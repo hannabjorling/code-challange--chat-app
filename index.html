@@ -24,8 +24,75 @@
 </head>
 
 <body>
+  <main>
+    <div class="container">
+      <div class="graph-el-left"></div>
+      <section class="phone-container">
+        <div class="heading-box">
+          <div class="heading-content">
+            <i class="fa-solid fa-angle-left"></i>
+            <img src="/public/images/avatar.jpg" alt="">
+            <span class="heading-name">
+              <h2>Samuel Green</h2>
+              <p>Available to Walk</p>
+            </span>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </div>
+        </div>
+        <div class="chat-box">
+          <div class="message-incoming">
+            <p>That sounds great. I’d be happy to discuss more.</p>
+          </div>
+          <div class="message-incoming">
+            <p>Could you send over some pictures of your dog, please?</p>
+          </div>
+          <div class="message-outgoing">
+            <img src="/public/images/dog-image-1.jpg" alt="">
+            <img src="/public/images/dog-image-2.jpg" alt="">
+            <img src="/public/images/dog-image-3.jpg" alt="">
+          </div>
+          <div class="message-outgoing">
+            <p>Here are a few pictures. She's a happy girl!</p>
+          </div>
+          <div class="message-outgoing">
+            <p>Can you make it?</p>
+          </div>
+          <div class="message-incoming">
+            <p>She looks so happy! The time we discussed works. How long shall I take her out for?</p>
+          </div>
+          <div class="message-incoming-option">
+            <p>
+              <input type="radio" name="30min" value="30-min">
+              <label for="30-min">30 minute walk</label>
+              <span class="price">$29</span>
+            </p>
+          </div>
+          <div class="message-incoming-option">
+            <p>
+              <input type="radio" name="60min" value="60-min">
+              <label for="60-min">1hour walk</label>
+              <span class="price">$49</span>
+            </p>
+          </div>
+          <form class="send-message">
+            <input type="text" name="message" id="message" placeholder="Type a message...">
+            <button type="submit"><i class="fa-solid fa-angle-right"></i></button>
+          </form>
+        </div>
+      </section>
+    </div>
+    <div class="container">
+      <section class="text-container">
+        <h1>Simple booking</h1>
+        <p>Stay in touch with our dog walkers through the chat interface. This makes it easy to
+          discuss arrangements and make bookings. Once the walk has been completed you can rate
+          your walker and book again all through the chat.</p>
+      </section>
+      <div class="graph-el-right"></div>
+    </div>
+  </main>
 
-  Samuel Green
+  <!-- Samuel Green
   Available to Walk
 
   That sounds great. I’d be happy with that.
@@ -44,12 +111,13 @@
   1 hour walk
   $49
 
-  Type a message…
+  Type a message… -->
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="https://kit.fontawesome.com/282add61de.js" crossorigin="anonymous"></script>
   <script type="module" src="/src/main.ts"></script>
 </body>
 
